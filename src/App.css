@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 10px;
+  font-family: "Madimi One", sans-serif;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.grass{
+  background:linear-gradient(to bottom right,#78c850 0,#78c850 50%,#fff );
+}
+.water{
+  background:radial-gradient( #6890f0, #bfe5e7,#6890f0) ;}
+
+.fire{
+  background-color: #f08030;
+}
+.normal{
+  background-color: #a8a878;
+}
+.electric{
+  background-color: #f8d030;
+}
+.bug{
+  background-color: #a8b820;
+}
+.dragon{
+  background: linear-gradient(to bottom right,#7038f8,#fff);
+}
+.dark{
+  background: linear-gradient(to bottom right, #705848,#fff);
+}
+.psychic{
+  background: linear-gradient(to bottom right ,#f85888,#fff);
+}.ghost{
+  background: linear-gradient(to bottom right ,#705898,#fff);
+}.rock{
+  background: linear-gradient(to bottom right ,#b8a038,#fff);
+}.flying{
+  background: linear-gradient(to bottom right ,#a890f0,#fff);
+}.steel{
+  background: linear-gradient(to bottom right ,#b8b8d0,#fff);
+}.fairy{
+  background: linear-gradient(to bottom right ,#f0b6bc,#fff);
+}.ice{
+  background: linear-gradient(to bottom right ,#98d8d8,#fff);
+}
+.stellar{
+  background: linear-gradient(to bottom right,#35ace7,#fff);
+}
+.fighting{
+  background: linear-gradient(to bottom right,#c03028,#fff);
+}
+.poison{
+  background: linear-gradient(to bottom right,#a040a0,#fff);
+}
+.ground{
+  background: linear-gradient(to bottom right,#e0c068,#fff);
+}

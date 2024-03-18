@@ -1,0 +1,70 @@
+.card-container{
+    position: relative;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    cursor: pointer;
+    
+    
+}
+.card-header{
+    .id-number{
+
+    }
+}
+.card-img{
+    z-index: 2;
+    & img{
+        width: 10rem;
+        height: 10rem;
+
+    }
+}
+
+.card-details{
+    z-index: 2;
+    .pokemon-name{
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 2px black;
+    }
+    .pokemon-types{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .type-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+            padding: 0.2rem 0.3rem;
+            border-radius: 0.5rem;
+            &:first-child{
+                margin-right: 0.5rem;
+            }
+            & h3{
+                text-transform: uppercase;
+                margin-left: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+    }
+}
+.card-bg{
+    position: absolute;
+    opacity: 0.4;
+    top: 10%;
+    transform: rotate(20deg);
+
+   
+}
