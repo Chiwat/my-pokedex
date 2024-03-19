@@ -10,8 +10,8 @@ export default function About() {
     <div className="about">
       <table>
         <tbody>
-          <DataRow category={"Height"} value={currentPokemon.height}/>
-          <DataRow category={"Weight"} value={currentPokemon.weight}/>
+          <DataRow category={"Height"} value={height}/>
+          <DataRow category={"Weight"} value={weight}/>
         </tbody>
       </table>
 

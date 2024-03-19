@@ -1,0 +1,27 @@
+.navigation-bar{
+    .navigation-header{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .navigation-link{
+        background-color: beige;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin:  1rem 0;
+        .gen-btn{
+            padding: 0.5rem 1rem;
+            font-family: inherit;
+            font-size: 1.2rem;
+            background-color: rgb(245, 237, 237);
+            color: rgb(112, 11, 11);
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right: 0.5rem;
+
+            }
+        }
+    }
+}

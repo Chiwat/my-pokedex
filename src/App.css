@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Unlock&display=swap');
 
 *{
   padding: 0;
@@ -17,54 +17,80 @@ body{
   flex-direction: column;
   width: 100%;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  .logo-pokemon{
+    font-family: "Unlock", serif;
+    font-size: 8rem;
+    
+  }
+  .pokeball-logo{
+    width: 7rem;
+    margin: 0 0.5rem;
+    
+    .pokeball-img{
+      
+      width: 100%;
+      transform: rotate(-45deg);
+      /* border: 5px solid black;
+      border-radius: 50%; */
+    }
+  }
+  
+}
+
+
 .grass{
-  background:linear-gradient(to bottom right,#78c850 0,#78c850 50%,#fff );
+  background:radial-gradient(#78c850 ,#cce4c0 , #78c850 75% );
 }
 .water{
   background:radial-gradient( #6890f0, #bfe5e7,#6890f0) ;}
 
 .fire{
-  background-color: #f08030;
+  background:radial-gradient(#f08030, #e2c166,#f08030 80%) ;
 }
 .normal{
-  background-color: #a8a878;
+  background:radial-gradient(#a8a878,#d8d8c6,#a8a878 80%);
 }
 .electric{
-  background-color: #f8d030;
+  background:radial-gradient(#f8d030,#eee0a9,#f8d030 80%) ;
 }
 .bug{
-  background-color: #a8b820;
+  background:radial-gradient(#a8b820,#bac089,#a8b820 80%) ;
+  
 }
 .dragon{
-  background: linear-gradient(to bottom right,#7038f8,#fff);
+  background: radial-gradient(#7038f8,#9d77f5,#7038f8);
 }
 .dark{
-  background: linear-gradient(to bottom right, #705848,#fff);
+  background: radial-gradient(#705848, #9e8f86,#705848);
 }
 .psychic{
-  background: linear-gradient(to bottom right ,#f85888,#fff);
+  background: radial-gradient( #f85888,#f789aa,#f85888);
 }.ghost{
-  background: linear-gradient(to bottom right ,#705898,#fff);
+  background: radial-gradient(#705898 ,#9b8db1,#705898);
 }.rock{
-  background: linear-gradient(to bottom right ,#b8a038,#fff);
+  background: radial-gradient(#b8a038 ,#cec395,#b8a038ff);
 }.flying{
-  background: linear-gradient(to bottom right ,#a890f0,#fff);
+  background: radial-gradient(#a890f0 ,#cbbef0,#a890f0);
 }.steel{
-  background: linear-gradient(to bottom right ,#b8b8d0,#fff);
+  background: radial-gradient(#b8b8d0 ,#e3e3eb,#b8b8d0);
 }.fairy{
-  background: linear-gradient(to bottom right ,#f0b6bc,#fff);
+  background: radial-gradient( #f0b6bc,#eedadc,#f0b6bc);
 }.ice{
-  background: linear-gradient(to bottom right ,#98d8d8,#fff);
+  background: radial-gradient(#98d8d8 ,#d3e7e7,#98d8d8);
 }
 .stellar{
-  background: linear-gradient(to bottom right,#35ace7,#fff);
+  background: radial-gradient(#35ace7,#84d5fd,#35ace7);
 }
 .fighting{
-  background: linear-gradient(to bottom right,#c03028,#fff);
+  background: radial-gradient(#c03028,#f07973,#c03028 80%);
 }
 .poison{
-  background: linear-gradient(to bottom right,#a040a0,#fff);
+  background: radial-gradient(#a040a0,#c07bc0,#a040a0);
 }
 .ground{
-  background: linear-gradient(to bottom right,#e0c068,#fff);
+  background: radial-gradient(#e0c068,#ecdbab,#e0c068);
 }

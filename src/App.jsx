@@ -5,6 +5,7 @@ import PokemonContainer from "./components/PokemonContainer";
 import SelectGen from "./components/SelectGen";
 import { PokemonModalProvider } from "./context/PokemonModalProvider";
 import Modal from "./components/Modal";
+import pokeballLogo from "/Images/pokeball/pokeball-logo.svg";
 
 function App() {
   const [gen, setGen] = useState(1);
@@ -13,11 +14,18 @@ function App() {
     <Suspense fallback={<Loader />}>
       <PokemonModalProvider>
         <div className="wrapper">
-          <h1 className="logo-pokemon">Pokedex</h1>
+          <div className="header">
+            <h1 className="logo-pokemon">P</h1>
+            <span className="pokeball-logo">
+              <img className="pokeball-img" src={pokeballLogo} alt="Logo" />
+            </span>
+            <h1 className="logo-pokemon">kedex</h1>
+          </div>
+
           <SelectGen toggleGen={setGen} />
           <PokemonContainer generationID={gen} />
         </div>
-        <Modal/>
+        <Modal />
       </PokemonModalProvider>
     </Suspense>
   );
