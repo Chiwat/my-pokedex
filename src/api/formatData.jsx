@@ -71,12 +71,12 @@ const pokemonImage = (url) =>{
 //format stats 
 export function formatStats(stats) {
     const statsMaxValues = {
-        hp: 714,
-        attack: 714,
-        defense: 614,
-        "special-attack": 504,
-        "special-defense": 614,
-        speed: 504,
+        hp: 255,
+        attack: 190,
+        defense: 250,
+        "special-attack": 194,
+        "special-defense": 250,
+        speed: 200,
     }
 
     const statsObject = stats.map(({ stat, base_stat }) => {

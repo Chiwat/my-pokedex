@@ -1,0 +1,18 @@
+
+.type-row{
+    display: flex;
+    .types-heading{
+        margin-right: 3rem;
+    }
+    .type-about{
+        width: 5rem;
+        background-color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 3px;
+        
+    }
+}

@@ -1,6 +1,7 @@
 import { formatStats } from "../../../api/formatData";
 import { usePokemonModal } from "../../../context/PokemonModalProvider";
 import DataRow from "../DataRow";
+import './Stats.css'
 
 const Stats=()=>{
     const {currentPokemon} = usePokemonModal()
@@ -10,9 +11,9 @@ const Stats=()=>{
         <div>
             <table>
                 <thead>
-                    <tr>
-                        <th>Stat</th>
-                        <th>Value</th>
+                    <tr className="row">
+                        <th className="category">Stat</th>
+                        <th className="stat-value">Value</th>
                     </tr>
                 </thead>
                 <tbody>

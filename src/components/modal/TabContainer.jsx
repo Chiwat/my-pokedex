@@ -3,6 +3,7 @@ import About from "./tabs/About"
 import Stats from "./tabs/Stats"
 import Evolution from "./tabs/Evolution"
 import { useState } from "react"
+import "./TabContainer.css"
 
 export default function TabContainer(){
     const tabs = [

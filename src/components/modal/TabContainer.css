@@ -1,0 +1,44 @@
+.tab-container{
+    height: 90%;
+    width: 50%;
+    background-color: tomato;
+    align-self: flex-end;
+    border-radius: 1rem;
+    border: 4px solid rgb(90, 87, 87);
+    border-left: none;
+    padding: 3rem;
+}
+.tabs{
+    display: flex;
+    .tab-btn{
+        padding: 0.5rem 1rem;
+        font-family: inherit;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        &:first-child{
+            background: linear-gradient(-30deg,red 0,white 20%,red 30%);
+        }
+        &:nth-child(2){
+            background-color: yellow;
+        }
+        &:last-child{
+            background-color: green;
+        }
+
+        &:not(:last-child){
+            margin-right: 0.5rem;
+        }
+    }
+   
+}
+.tab-content{
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(33, 44, 54);
+    border-radius: 5px;
+    padding: 1rem;
+}

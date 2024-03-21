@@ -1,6 +1,7 @@
 import { usePokemonModal } from "../../../context/PokemonModalProvider"
 import useEvolution from "../../../hooks/useEvolution"
-
+import './Evolution.css'
+import { MdOutlineDoubleArrow } from "react-icons/md";
 export default function Evolution(){
     const { currentPokemon} =usePokemonModal();
     const chain = useEvolution(currentPokemon.id)
@@ -18,26 +19,26 @@ export default function Evolution(){
 
                         return (
                             <div className='evolution-container' key={ next.name }>
-                                <div>
+                                <div className="evo-box">
                                     <div className='poke-img'>
                                         <div className='pokeball-bg'></div>
 
-                                        <img src={ current.image } alt='pokemon-image' />
+                                        <img src={ current.image } alt='pokemon-image'  className="pokemon-image"/>
                                     </div>
 
-                                    <span>{ current.name }</span>
+                                    <span className="poke-name" >{ current.name }</span>
                                 </div>
 
-                                <span className='arrow'></span>
+                                <MdOutlineDoubleArrow className="arrow" />
 
-                                <div>
+                                <div className="evo-box">
                                     <div className='poke-img'>
                                         <div className='pokeball-bg'></div>
 
-                                        <img src={ next.image } alt='pokemon-image' />
+                                        <img src={ next.image } alt='pokemon-image' className="pokemon-image" />
                                     </div>
 
-                                    <span>{ next.name }</span>
+                                    <span className="poke-name">{ next.name }</span>
                                 </div>
                             </div>
                         );

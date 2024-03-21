@@ -41,22 +41,7 @@
         align-items: center;
         justify-content: center;
         
-        .type-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: aliceblue;
-            padding: 0.2rem 0.3rem;
-            border-radius: 0.5rem;
-            &:first-child{
-                margin-right: 0.5rem;
-            }
-            & h3{
-                text-transform: uppercase;
-                margin-left: 0.5rem;
-                font-size: 0.8rem;
-            }
-        }
+       
         
     }
 }
@@ -67,4 +52,20 @@
     transform: rotate(20deg);
 
    
+}
+.type-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+    &:first-child{
+        margin-right: 0.5rem;
+    }
+    & h3{
+        text-transform: uppercase;
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+    }
 }

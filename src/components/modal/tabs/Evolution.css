@@ -1,0 +1,57 @@
+.evolution{
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color:rgb(48, 53, 53) rgb(29, 26, 43);
+    scrollbar-width: thin;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
+.error-msg{
+    font-size: 1.5rem;
+    color: aliceblue;
+    
+    
+}
+
+.evolution-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .evo-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        .poke-img{
+            position: relative;
+            .pokeball-bg{
+                background:  url('/Images/pokeball/pokeball.svg') ;
+                background-position: center;
+                background-size: contain;
+                opacity: 0.6;
+                width: 8rem;
+                height: 8rem;
+            }
+            .pokemon-image{
+                width: 7rem;
+                height: 7rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+            }
+        }
+        .poke-name{
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+}
+.arrow{
+    font-size: 2rem;
+    color: #fff;
+}
