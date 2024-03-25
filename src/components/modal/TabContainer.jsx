@@ -2,8 +2,9 @@ import { usePokemonModal } from "../../context/PokemonModalProvider"
 import About from "./tabs/About"
 import Stats from "./tabs/Stats"
 import Evolution from "./tabs/Evolution"
-import { useState } from "react"
+import { Suspense, useState } from "react"
 import "./TabContainer.css"
+
 
 export default function TabContainer(){
     const tabs = [
@@ -14,7 +15,9 @@ export default function TabContainer(){
 
     const [currentTab,setCurrentTab] =useState(0)
     return(
-        <div className="tab-container">
+       <div className="tab-container">
+        <div className="tab-header"></div>
+        <div className="tab-body">
             <div className="tabs">
               {tabs.map((tab,index)=>(
                 <button 
@@ -27,8 +30,13 @@ export default function TabContainer(){
               ))}
             </div>
             <div className="tab-content">
+                
                 {tabs[currentTab].component}
+               
+                
             </div>
         </div>
+       </div>
+        
     )
 }

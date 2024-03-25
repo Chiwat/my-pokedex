@@ -1,0 +1,27 @@
+.loader-box{
+    width: 100%;
+    height: 100%;
+    
+}
+.loader-box{
+   background-image: url('/Images/pokeball/pokeballLoader.svg');
+   width: 13rem;
+   height: 13rem;
+   background-repeat: no-repeat;
+   background-size: contain;
+   animation: pokeballRotate 0.7s infinite;
+   margin: 20% auto;
+   position: relative;
+   z-index: 4;
+   display: block;
+ 
+}
+@keyframes pokeballRotate{
+    0%{
+        transform: rotate(0deg) scale(1.02);
+
+    }
+    100%{
+        transform: rotate(360deg) scale(0.99);
+    }
+}

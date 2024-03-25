@@ -5,6 +5,7 @@ import { formatPokemonData } from "../api/formatData";
 
 const useGeneration = (generationID) => {
   const [pokemons, setPokemons] = useState([]);
+  const [isLoading,setIsLoading] = useState(false);
   
   const generation = useMemo(() => {
     return generations.find((gen) => gen.id === generationID);
@@ -18,7 +19,7 @@ const useGeneration = (generationID) => {
       return;
     }
     setPokemons([]);
-    
+    setIsLoading(true)
     //Get all pokemons in the generation which is selected
     fetchPokemons(generation.limit, generation.offset).then(
       async ({ results }) => {
@@ -33,7 +34,8 @@ const useGeneration = (generationID) => {
             
           }));
       
-        setPokemons(data);     
+        setPokemons(data);
+        setIsLoading(false);     
       }
     );
   };
@@ -43,7 +45,8 @@ const useGeneration = (generationID) => {
       PokemonsInGen();
     }
   },[generationID])
-  return pokemons;
+  return {
+    pokemons,isLoading};
     
   
   

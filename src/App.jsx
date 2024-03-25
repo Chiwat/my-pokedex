@@ -11,7 +11,7 @@ function App() {
   const [gen, setGen] = useState(1);
 
   return (
-    <Suspense fallback={<Loader />}>
+    
       <PokemonModalProvider>
         <div className="wrapper">
           <div className="header">
@@ -23,11 +23,13 @@ function App() {
           </div>
 
           <SelectGen toggleGen={setGen} />
+          
           <PokemonContainer generationID={gen} />
+          
         </div>
         <Modal />
       </PokemonModalProvider>
-    </Suspense>
+   
   );
 }
 

@@ -1,18 +1,73 @@
+.about{
+    width: 100%;
+    padding: 2rem 1rem;
+}
 
-.type-row{
+
+
+    
+.type-about{
+    width: 6rem;
+    background-color: azure;
+    color: black;
     display: flex;
-    .types-heading{
-        margin-right: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    &:first-child{
+        margin-bottom: 0.5rem;
     }
-    .type-about{
-        width: 5rem;
-        background-color: azure;
+    
+}
+
+.ability-container{
+    display: block;
+    font-weight: 900;
+    
+    
+
+    .ability-box{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 0.2rem 0.5rem;
-        font-size: 0.8rem;
-        border-radius: 3px;
-        
+        @media screen and (max-width:900px){
+            
+            margin-bottom: 0.5rem;
+        }
+        .ability-name{
+            text-transform: capitalize;
+            margin-right: 0.3rem;
+            width: 7rem;
+            @media screen and (max-width:900px){
+                margin-right: 1rem;
+                width: 9rem;
+            }
+            @media screen and (max-width:600px){
+                
+                width: 7rem;
+            }
+            @media screen and (max-width:460px){
+                
+                width: 6rem;
+            }
+            
+        }
+        .hidden{
+            background-color: rgb(49, 21, 33);
+            color: darkorchid;
+            letter-spacing: 1px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            padding: 0.3rem;
+            border-radius: 3px;
+            text-align: center;
+
+        }
     }
+}
+
+
+.heading{
+    margin-right: 3rem;
 }

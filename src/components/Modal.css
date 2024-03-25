@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +13,35 @@
 .modal-content{
     width: 60rem;
     height: 70vh;
-    
     display: flex;
     justify-content: center;
     border-radius: 0.5rem;
+    animation: openModal 1s ;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        width: 45rem;
+        height: 90vh;
+        background-color: tomato;
+    }
+    @media screen and (max-width: 600px) {
+        width: 35rem;
+        height: 80vh;  
+    }
+    @media screen and (max-width: 460px) {
+        width: 30rem;
+        height: 75vh;
+    }
+}
+@keyframes openModal{
+    0%{
+        transform: translate(-20%,20%);
+        opacity: 0;
+    }
+    98%{
+        transform: translate(1%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+        opacity: 1;
+    }
 }

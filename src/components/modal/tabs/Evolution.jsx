@@ -2,19 +2,22 @@ import { usePokemonModal } from "../../../context/PokemonModalProvider"
 import useEvolution from "../../../hooks/useEvolution"
 import './Evolution.css'
 import { MdOutlineDoubleArrow } from "react-icons/md";
+import Loader from "../../Loader.jsx"
 export default function Evolution(){
     const { currentPokemon} =usePokemonModal();
-    const chain = useEvolution(currentPokemon.id)
+    const {evolution,isLoading} = useEvolution(currentPokemon.id)
     
-
+    if(isLoading){
+        return <Loader/>
+    }
     return(
         
         <div className="evolution">
            {
-                    ! chain.length ?
+                    ! evolution.length ?
                         <strong className='error-msg'>This Pokémon doesn't Evolve</strong>
                     :
-                    chain.map((evolution) => {
+                    evolution.map((evolution) => {
                         const { current, next } = evolution;
 
                         return (

@@ -8,7 +8,7 @@ const Stats=()=>{
     const statsPoke = formatStats(currentPokemon.stats)
     console.log(statsPoke)
     return(
-        <div>
+        <div className="stats">
             <table>
                 <thead>
                     <tr className="row">
@@ -20,7 +20,7 @@ const Stats=()=>{
                     {statsPoke.map((data)=>{
                         const{name,value,max} = data
                         return(
-                            <DataRow category={name} value={value} max={max}/>
+                            <DataRow category={name} value={value} max={max} key={name}/>
                         )
                     })}
                 </tbody>
