@@ -67,21 +67,33 @@
         font-size: 1.2rem;
         border: none;
         border-radius: 3px;
-        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 3px 3px 1px  rgba(0, 0, 0, 0.4);
         color: #fff;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        text-shadow: 0 3px 5px rgba(0, 0, 0, 0.973);
+        transition: 0.5s;
+       
+        &:hover{
+            filter: brightness(110%);
+            transform: scale(1.01);
+
+        }
         @media screen and (max-width:900px) {
             font-size: 1.6rem;
             
         }
         &:first-child{
-            background: red;
+            background: rgb(248, 34, 34);
+           
+            
         }
         &:nth-child(2){
-            background-color: yellow;
+            background-color: rgb(253, 253, 43);
+           
+            
         }
         &:last-child{
-            background-color: green;
+            background-color: rgb(37, 172, 37);
+            
         }
 
         &:not(:last-child){
@@ -91,6 +103,12 @@
                 
             }
         }
+    }
+    .active{
+        filter: brightness(130%);
+        transform: scale(1.05) translateY(-3px);
+
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.4);      
     }
    
 }

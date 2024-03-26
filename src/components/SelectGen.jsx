@@ -1,6 +1,6 @@
 import generations from "../data/generations";
 import './SelectGen.css'
-const SelectGen=({toggleGen})=>{
+const SelectGen=({toggleGen,generation})=>{
     
     return(
        <div className="navigation-bar">
@@ -8,7 +8,7 @@ const SelectGen=({toggleGen})=>{
             <div className="navigation-link">
                 {generations.map((gen)=>{
                     return(
-                       <button className="gen-btn"
+                       <button className={generation === gen.id ? "gen-btn active-gen" : "gen-btn"}
                             key={gen.id}
                             onClick={()=>toggleGen(gen.id)}
                             >

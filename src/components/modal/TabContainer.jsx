@@ -21,7 +21,7 @@ export default function TabContainer(){
             <div className="tabs">
               {tabs.map((tab,index)=>(
                 <button 
-                    className="tab-btn" 
+                    className={currentTab === index ? "tab-btn active" : "tab-btn" }
                     key={tab.id}
                     onClick={()=>setCurrentTab(index)}
                     >

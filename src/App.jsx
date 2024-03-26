@@ -22,7 +22,7 @@ function App() {
             <h1 className="logo-pokemon">kedex</h1>
           </div>
 
-          <SelectGen toggleGen={setGen} />
+          <SelectGen toggleGen={setGen} generation={gen} />
           
           <PokemonContainer generationID={gen} />
           
